@@ -72,14 +72,6 @@ main {
   gap: 2rem;
 }
 
-#calendar {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  overflow: hidden
-}
 
 .task-list {
   width: 100%;
@@ -295,25 +287,6 @@ header nav ul li a:hover {
   transform: translateY(1px);
 }
 
-.alert {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.alert-success {
-  color: #155724;
-  background-color: #d4edda;
-  border-color: #c3e6cb;
-}
-
-.alert-danger {
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
-}
 
 /* Animations */
 @keyframes fadeIn {
@@ -344,14 +317,6 @@ header nav ul li a:hover {
     flex-direction: column;
   }
   
-  #calendar, .task-list {
-    width: 100%;
-    max-width: none;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    padding: 1.5rem;
-  }
 }
 
 /* Calendar Dark Mode Styles */
@@ -379,11 +344,7 @@ header nav ul li a:hover {
     background-color: darken(var(--primary-color), 10%);
 }
 
-.dashboard {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
+
 
 #calendar {
     flex: 1;
@@ -437,14 +398,4 @@ header nav ul li a:hover {
 
 .view-task-btn {
     width: 100%;
-}
-
-@media (max-width: 768px) {
-    .dashboard {
-        flex-direction: column;
-    }
-    
-    #calendar, .task-section {
-        width: 100%;
-    }
 }

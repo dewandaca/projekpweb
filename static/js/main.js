@@ -1,18 +1,5 @@
 $(document).ready(function() {
 
-    // Fungsi untuk menampilkan notifikasi
-    function showNotification(message, type) {
-        var notification = $('<div class="notification ' + type + '">' + message + '</div>');
-        $('body').append(notification);
-        notification.addClass('show');
-        setTimeout(function() {
-            notification.removeClass('show');
-            setTimeout(function() {
-                notification.remove();
-            }, 300);
-        }, 3000);
-    }
-
     // Fungsi untuk membuka modal
     function openModal(title, date, description) {
         $('#modal-task-title').text(title);
